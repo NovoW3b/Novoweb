@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/images/NovoWeb ICON3.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovoWeb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/chatbot.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="nav_logo">
+          <i class="fa-solid fa-n"></i>
+          <i class="fa-solid fa-o"></i>
+          <i class="fa-solid fa-v"></i>
+          <i class="fa-solid fa-o"></i>
+          <br />
+          <i class="fa-solid fa-w"></i>
+          <i class="fa-solid fa-e"></i>
+          <i class="fa-solid fa-b"></i>
+        </div>
+        <img class="iconWeb" src="src/images/NovoWeb ICON3.ico" alt="novoweb" />
+        <!-- Navbar para Computadores -->
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#produtos">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#planos">Planos</a>
+          </li>
+        </ul>
+        <!--navbar para celulares-->
+
+        
+  <button id="mobile_btn">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+    </header>
+
+    <main id="content">
+      <!-- Seção Home -->
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            sua empresa ainda não
+            <span>tem um site?</span>
+          </h1>
+          <p id="description">
+            A oportunidade de crescer está a um clique de distância.
+          </p>
+
+          <!--<div id="cta_buttons">
+            <a href="#" class="btn-default"> ADICIONAR </a>
+            <a href="tel:+" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              CONTATO
+            </a>
+          </div>-->
+          <div class="social-media-buttons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div id="banner"></div>
+      </section>
+
+      <!--Sobre Nós-->
+      <div class="border">
+        <section class="about-section">
+          <div class="about-left"></div>
+          <div class="about-right">
+            <h2>Sobre Nós</h2>
+            <p>
+              Na NovoWeb, nossa missão é transformar ideias em experiências
+              digitais únicas. Com uma equipe apaixonada por inovação e design,
+              trabalhamos lado a lado com nossos clientes para criar soluções de
+              sites personalizadas, focando em funcionalidade, beleza e
+              performance.
+            </p>
+            <p>
+              Seja um site simples ou um portal completo, nos dedicamos para que
+              cada detalhe reflita a essência do seu negócio e conquiste o seu
+              público. Bem-vindo ao futuro digital com a NovoWeb.
+            </p>
+            <div class="sobre-nos-container">
+              <div class="meio-circulo"></div>
+
+              <div class="btn-container">
+                <button class="btn-defaulte">
+                  <a href="sobre.html">Saiba Mais</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Seção Produtos -->
+      <section id="produtos">
+        <h2>MODELOS<br />DE<br />SITES</h2>
+        <div class="produtos-container">
+          <div class="produto">
+            <img src="src/images/Modelo1.png" alt="Site 1" />
+            <h3>Site Personalizado 1</h3>
+            <div class="preco">R$ 2.000,00</div>
+            <a href="Food.html" target="_self" class="btn-default">Ver Mais</a>
+          </div>
+          <div class="produto">
+            <img src="src/images/Colares/Lume Collares.png" alt="Site 2" />
+            <h3>Site Personalizado 2</h3>
+            <div class="preco">R$ 3.000,00</div>
+            <a href="Colares.html" class="btn-default">Ver Mais</a>
+          </div>
+          <div class="produto">
+            <img src="src/images/Colares/Lume Collares.png" alt="Site 3" />
+            <h3>Site Personalizado 3</h3>
+            <div class="preco">R$ 4.500,00</div>
+            <a href="carros.html" class="btn-default">Ver Mais</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Planos -->
+      <section id="planos">
+        <h2>Nossos Planos</h2>
+        <div class="planos-container">
+          <div class="plano">
+            <h3>Plano Básico</h3>
+            <p>
+              Ideal para pequenas empresas que estão começando no mundo digital.
+            </p>
+            <ul>
+              <li>1 página personalizada</li>
+              <li>Design responsivo</li>
+              <li>Suporte básico</li>
+              <li>1 formulário de contato</li>
+            </ul>
+            <p class="preco">R$ 499,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+          <div class="plano destaque">
+            <h3>Plano Intermediário</h3>
+            <p>
+              Perfeito para empresas em crescimento que precisam de mais
+              funcionalidades.
+            </p>
+            <ul>
+              <li>Até 5 páginas personalizadas</li>
+              <li>Design responsivo</li>
+              <li>Integração com redes sociais</li>
+              <li>Otimização para SEO</li>
+              <li>Suporte prioritário</li>
+            </ul>
+            <p class="preco">R$ 999,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+          <div class="plano">
+            <h3>Plano Avançado</h3>
+            <p>
+              Para empresas que desejam um site completo e personalizado, com
+              todos os recursos avançados.
+            </p>
+            <ul>
+              <li>Páginas ilimitadas</li>
+              <li>Design exclusivo e responsivo</li>
+              <li>Integração com e-commerce</li>
+              <li>Manutenção mensal</li>
+              <li>Otimização SEO avançada</li>
+              <li>Suporte premium</li>
+            </ul>
+            <p class="preco">R$ 1999,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botão de Chatbot -->
+    <button id="chatbotButton">
+      <i class="fa-solid fa-robot"></i>
+    </button>
+    <!-- Janela do Chatbot -->
+    <div id="chatbotWindow">
+      <!-- Cabeçalho do Chatbot -->
+      <div>
+        Chatbot
+        <span id="closeChatbot">&times;</span>
+      </div>
+      <!-- Área de Mensagens -->
+      <div id="chatbotMessages">
+        <!-- Mensagens serão inseridas aqui -->
+      </div>
+      <!-- Campo de Entrada -->
+      <div>
+        <input
+          type="text"
+          id="chatbotInput"
+          placeholder="Digite sua mensagem..."
+        />
+        <button id="sendChatbot">Enviar</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>NovoWeb</h3>
+        <p>"Conectando você ao futuro digital"</p>
+        <ul class="socials">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 NovoWeb. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="src/JavaScript/script.js"></script>
+  </body>
+</html>

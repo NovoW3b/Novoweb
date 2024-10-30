@@ -1,0 +1,88 @@
+:root {
+      --primary-color: #111BD9;
+      --secondary-color: #044DDF;
+      --accent-color: #03FA6E;
+      --background-color: #F2F2F2;
+      --text-color: #0D0D0D;
+  
+      --button-color: #53b4ff;
+      --button-hover-color: #004080;
+  }
+  
+  * {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+  }
+  
+  body {
+      background-color: #ffffff;
+      background-image: url(../images/SobreNós.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+  }
+  
+  /* Estilo da caixa */
+  .caixa {
+      background-color: var(--accent-color);
+      padding: 24px 10px;
+      width: 700px;
+      max-width: 100%; 
+      margin: 24px 70px; 
+      border-radius: 24px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      cursor: pointer;
+  }
+  
+  /* Efeito de hover na caixa */
+  .caixa:hover {
+      background-color: var(--button-color);
+      transform: scale(1.09);
+      box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+  }
+  
+
+  .btn-defaulte {
+      margin: 24px;
+  }
+  
+
+  @media (max-width: 768px) {
+      .caixa {
+          width: 10%; 
+          padding: 14px;
+      }
+  
+      body {
+            background-size: contain; 
+            background-position: center; 
+            background-attachment: scroll; 
+            background-image: url(../images/SobreNos.png);
+            background-size: 175%;  
+            overflow-x: hidden;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .caixa {
+          width: 74%; 
+          padding: 6px; 
+      }
+  
+      .btn-defaulte {
+          margin: 14px;
+      }
+  
+      body {
+          background-position: top; 
+          overflow-x: hidden;
+      }
+  }

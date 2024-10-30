@@ -1,0 +1,41 @@
+footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  .footer-content h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  .footer-content p {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  
+  .footer-content ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .footer-content ul li {
+      display: inline;
+      margin: 0 10px;
+  }
+  
+  .footer-content ul li a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .footer-content ul li a:hover {
+      text-decoration: underline;
+  }
+  
+  .footer-bottom {
+      margin-top: 20px;
+      font-size: 14px;
+  }
+  

@@ -1,0 +1,232 @@
+/* Header */
+header {
+      width: 100%;
+      padding: 28px 8%;
+      box-sizing: border-box;
+  }
+  
+  /* Ícone */
+  .iconWeb {
+      height: 40px;
+      width: auto;
+      margin-left: 170px;
+      cursor: pointer;
+  }
+  
+  /* Navbar */
+  #navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 4%;
+      margin-top: 20px;
+      box-sizing: border-box;
+  }
+  
+  .navbar a:hover {
+      border-bottom: 3.5px solid;
+      border-radius: 4px;
+      padding: 5px 12px;
+  }
+  
+  /* Logo da Navbar */
+  .nav_logo {
+      font-size: 3.3rem;
+      color: #111BD9;
+      font-weight: bold;
+  }
+  
+  /* Lista de Navegação */
+  #nav_list {
+      display: flex;
+      list-style: none;
+      gap: 38px;
+      margin-right: 350px;
+      padding: 15px 90px;
+      background-color: #b3a7a74c;
+      border-radius: 22px;
+  }
+  
+  #nav_list a:hover {
+      border-bottom: 4.5px solid #03FA6E;
+      border-radius: 2px;
+      padding: 2px;
+  }
+  
+  .nav-item a {
+      text-decoration: none;
+      color: #181818;
+      font-weight: 700;
+      font-size: 17px;
+  }
+  
+  .nav-item.active a {
+      color: #181818;
+      border-bottom: 3.5px solid #03FA6E;
+      border-radius: 2px;
+  }
+  
+  /* Botão para o menu mobile */
+  #mobile_btn {
+      display: none;
+  }
+  
+  #mobile_menu {
+      display: none;
+  }
+  
+  /* Sobre Nós */
+  .border {
+      padding: 45px;
+      background-color: rgba(246, 246, 218, 0.767);
+  }
+  
+  /* Seção About */
+  .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16% 10%;
+      background-color: #f9f9f9;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-sizing: border-box;
+  }
+  
+  /* Meio Círculo à Esquerda */
+  .about-left {
+      width: 400px;
+      height: 770px;
+      border-radius: 0 400px 400px 0;
+      background-color: #111BD9;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  
+  /* Área de Texto à Direita */
+  .about-right {
+      max-width: 600px;
+      margin-left: 50px;
+      color: #333333;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .about-right h2 {
+      font-size: 48px;
+      color: #111BD9;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+  }
+  
+  .about-right p {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #181818;
+      margin-bottom: 15px;
+      margin-right: -100px;
+  }
+  
+  /* Efeito de Sombra para Profundidade */
+  .about-section::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.05);
+      top: 0;
+      left: 0;
+      z-index: 0;
+  }
+  
+  /* Botão Padrão */
+  .btn-container {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .btn-defaulte {
+      background: #03FA6E;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      color: #fff;
+  }
+  
+  .btn-defaulte:hover {
+      transform: scale(1.1);
+      background-color: #111BD9;
+      color: #fff;
+  }
+  
+  .btn-defaulte a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .btn-defaulte i {
+      color: #fff;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+      .about-section {
+          flex-direction: column;
+          padding: 50px 5%;
+      }
+  
+      .about-left {
+          display: none;
+      }
+  
+      .about-right {
+          margin-left: 0;
+          text-align: center;
+      }
+  
+      .about-right h2 {
+          font-size: 36px;
+      }
+  
+      .about-right p {
+          font-size: 16px;
+      }
+  }
+  
+  @media screen and (max-width: 1170px) {
+      #nav_list,
+      #navbar .btn-default {
+          display: none;
+      }
+  
+      .iconWeb {
+          display: none;
+      }
+
+      .border {
+            margin-top: -200px;
+      }
+      
+  }
+
+  @media screen and (max-width: 1360px) {
+  .iconWeb{
+      display: none;
+}
+
+.about-left{
+      width: 320px;
+      height: 790px;
+      border-radius: 0 400px 400px 0;
+}
+}
